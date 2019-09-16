@@ -8,4 +8,5 @@
             <li><a href="/frett/{{frett[0]}}">{{ frett[1] }} </a></li>
         {% endfor %}
     </ul>
+    
 {% endblock %}
