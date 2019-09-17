@@ -31,7 +31,8 @@ def index():
 @app.route("/frett/<int:nr>")
 def frett0(nr):
 	frett = frettir[nr]
-	return render_template("info.tpl",frett=frett)
+	mynd=str(frett[0])
+	return render_template("info.tpl",frett=frett, mynd=mynd)
 
 @app.errorhandler(404)
 def error404(error):
