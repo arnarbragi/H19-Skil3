@@ -32,7 +32,8 @@ def index():
 def frett0(nr):
 	frett = frettir[nr]
 	mynd=str(frett[0])
-	return render_template("info.tpl",frett=frett, mynd=mynd)
+	print(mynd)
+	return render_template("info.tpl",frett=frett, mynd=nr)
 
 @app.errorhandler(404)
 def error404(error):
